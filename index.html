@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Example</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-toggle" onclick="toggleSidebar()">&#9776;</div>
+      <ul>
+        <li class="context" onclick="openSubMenu(1)">Menu 1</li>
+        <li class="menu2" onclick="openSubMenu(2)">Menu 2</li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div class="buy-bilet">
+        <div class="header-buy">
+          <a href="#"><img src="./images/ayirways_logo.jpg" alt="" /></a>
+          <a href="#">Muhim malumot</a>
+          <a href="#">Xarid qilish va boshqarish</a>
+          <a href="#">Sadoqatlik dasturi</a>
+          <a href="#">Biz haqimizda</a>
+        </div>
+        <div class="body-buy">
+          <h1>
+            Aviachiptalarni online xarid qiling va 3 foizli chegirmaga ega
+            bo'ling
+          </h1>
+          <form action="">
+            <div class="link-list">
+              <button><a href="">Chipta sotib olish</a></button>
+              <button><a href="">Ro'yxatdan o'tish</a></button>
+              <button><a href="">CIP & Lounge</a></button>
+              <button><a href="">Mehmonxona</a></button>
+              <button><a href="">Avtomobil buyurtmasi</a></button>
+              <button><a href="">Sug'urta</a></button>
+            </div>
+            <div class="borish-qaytish">
+              <input type="checkbox" />
+              <label for="borish-qaytish">Borish va qaytish</label>
+            </div>
+            <div class="inpust">
+              <input placeholder="Qayerdan" type="text" required />
+              <input placeholder="Qayerga" type="text" required />
+              <input placeholder="Sanani tanlang" type="date" required />
+              <input placeholder="Yo'lovchilar" type="number" required />
+              <input placeholder="Ism familyangiz" type="text" />
+              <input placeholder="To'lov turi" type="text" required />
+              <button type="submit">Chipta olish</button>
+            </div>
+          </form>
+          <div class="result"></div>
+        </div>
+      </div>
+      <div class="content-text"></div>
+    </div>
+
+    <script src="./sidebar.js"></script>
+  </body>
+</html>
